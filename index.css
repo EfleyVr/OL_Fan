@@ -1,0 +1,113 @@
+/*rangement*/
+.principal {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.principal > div {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+/*box : style*/
+.bordure{
+    border-top: 5px double #C88C28;
+    border-left: 3px solid #c88d284d;
+    border-right: 3px solid #c88d284d;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: transform 0.4s, box-shadow 0.5s;
+}
+
+.bordure:hover{
+    transform: translateY(-4px);
+    box-shadow: 5px 6px rgb(230, 230, 230);
+}
+
+.bordure img{
+    border-radius: 15px;
+    border: 2px solid #C88C28;
+    margin: 10px;
+}
+
+/*sous-box : style*/
+
+.sous_box{
+    border: none;
+    border-left: 3px solid #C88C28;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+    transition: transform 0.6s, box-shadow 0.8s;
+}
+
+.sous_box:hover{
+    transform: translateY(-4px);
+    box-shadow: 3px 4px rgb(230, 230, 230);
+}
+
+/*tableau*/
+.tableau{
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-collapse: collapse;
+}
+
+.tableau-style{
+    border: 1px solid rgb(26, 26, 26);
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+/*style bouton*/
+.bouton, .bouton-fin{
+    width: 35%;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    padding: 8px;
+    margin: 15px;
+    transition: transform 0.35s, background-color 0.4s;
+}
+
+.bouton:hover, .bouton-fin:hover{
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+    transform: scale(1.1);
+}
+
+.bouton:active, .bouton-fin:active{
+    transform: scale(0.9);
+}
+
+.bouton-fin{
+    display: inline-block;
+    margin: 15px auto;
+}
+
+/*Titre box*/
+h3{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+/*serre*/
+.serre{
+    line-height: 15px;
+}
+
+.serre img{
+    margin: 0;
+}
+
+.serre h4{
+    text-decoration: underline;
+}

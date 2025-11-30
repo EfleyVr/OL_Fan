@@ -1,0 +1,118 @@
+/*body*/
+body{
+    min-height: 100%;
+    margin: 0px;
+}
+
+/*header*/
+header{
+    text-align: center;
+    position: sticky;
+    top : 0;
+    background-color: white;
+    line-height: 10px;
+    padding: 15px;
+    box-shadow: 0px 5px rgb(235, 235, 235);
+    border-radius: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 50;
+}
+
+header img{
+    width: 100px;
+}
+
+/*navigation site*/
+.navigation{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(235, 235, 235, 0.39);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0px 5px rgba(235, 235, 235, 0.664);
+}
+    /*retour*/
+.retour img{
+    width: 40px;
+}
+    /*Section page site*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0.93;
+}
+
+summary{
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+summary:hover{
+    text-decoration: underline;
+    transform: scale(105%);
+}
+    /*choix page site*/
+.sous-nav{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 22px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.sous-nav li:hover{
+    text-decoration: underline;
+}
+
+/*main*/
+main{
+    flex: 1;
+}
+
+/*footer*/
+footer{
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.copy_sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.copy{
+    text-align: left;
+    padding: 5px;
+    margin: 25px;
+}
+
+.copy p{
+    text-decoration: underline;
+}
+
+.nom_foot{
+    font-size: 18px;
+}
