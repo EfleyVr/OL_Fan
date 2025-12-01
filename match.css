@@ -28,7 +28,7 @@ h3{
     border-radius: 20px;
 }
 
-.match{
+.matchU{
     grid-row: 1;
     padding: 20px;
     margin: 20px;
@@ -46,7 +46,7 @@ h3{
     border-radius: 20px;
 }
 
-.bouton{
+.bouton-plus{
     text-align: center;
     width: 35%;
     border-radius: 20px;
@@ -54,14 +54,34 @@ h3{
     padding: 5px;
     margin: 15px;
     transition: transform 0.35s, background-color 0.4s;
+    list-style: none;
 }
 
-.bouton:hover{
+.bouton-plus:hover{
     cursor: pointer;
     background-color: rgb(230, 230, 230);
     transform: scale(1.1);
 }
 
-.bouton:active{
+.bouton-plus:active{
     transform: scale(0.9);
+}
+
+.bouton-plus-style{
+    display: grid;
+}
+
+.bouton-plus-style[open] .bouton-plus{
+    grid-row: 2;
+}
+
+.bouton-plus-style[open] .bouton-plus{
+    color: transparent;
+    position: relative;
+}
+
+.bouton-plus-style[open] .bouton-plus::before{
+    color: black;
+    position: absolute;
+    content: "Voir moins";
 }
