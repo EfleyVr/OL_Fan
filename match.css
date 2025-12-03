@@ -6,14 +6,14 @@ h3{
 }
 
 /*position carte match*/
-.a-venir, .fini{
+.regroupement-match{
     column-count: 3;
     column-gap: 30px;
     margin: 20px;
 }
 
 /*postion + style*/
-.a-venir div, .fini div{
+.regroupement-match .match{
     margin-bottom: 30px;
     padding: 10px;
     border-left: 5px double #C88C28;
@@ -25,12 +25,12 @@ h3{
     transition: transform 0.5s, box-shadow 0.7s;
 }
 
-.matchU:hover, .match:hover{
+.match:hover{
     transform: translateY(-4px);
     box-shadow: 3px 5px rgb(230, 230, 230);
 }
 
-.matchU img, .match img{
+.match img{
     width: 70%;
     border: 2px solid #C88C28;
     border-radius: 20px;
@@ -98,4 +98,10 @@ h3{
 
 .bouton:active{
     transform: scale(0.9);
+}
+/*la note*/
+.note{
+    font-size: 15px;
+    margin-left: 20px;
+    line-height: 3px;
 }
