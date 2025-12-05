@@ -56,16 +56,49 @@
 
 /*tableau*/
 .tableau{
-    display: flex;
-    justify-content: center;
-    border: none;
     border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s, box-shadow 0.5s;
 }
 
-.tableau-style{
-    border: 1px solid rgb(26, 26, 26);
-    border-collapse: collapse;
-    padding: 10px;
+.tableau:hover{
+    transform: translateY(-4px);
+    box-shadow: 3px 4px rgb(200, 200, 200);
+}
+
+.tableau thead th{
+    background-color: #C88C28;
+    border-left: 2px solid #c88d284d;
+    border-right: 2px solid #c88d284d;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.tableau tbody tr{
+    border-bottom: 1px solid #c0c0c0;
+    border-left: 2px solid #c88d284d;
+    border-right: 2px solid #c88d284d;
+    transition: background-color 0.5s;
+}
+
+.tableau tbody tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.tableau tbody tr:hover{
+    background-color: rgb(235, 235, 235);
+    cursor: default;
+}
+
+.tableau tbody td{
+    padding: 8px;
+    text-align: center;
 }
 
 /*style bouton*/
