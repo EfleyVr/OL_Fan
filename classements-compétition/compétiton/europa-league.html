@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <title>OL Fan</title>
         <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="classement.css">
+        <link rel="stylesheet" href="el.css">
         <link rel="icon" href="/image/favicon.ico" type="image/x-icon">
     </head>
 
@@ -57,6 +57,43 @@
         </nav>
 
     <main>
+        <h3>Europa League</h3>
+        <section class="rangement">
+            <div class="section-classement">
+                <h4>Classement Europa League :</h4>
+                <table class="classement" data-json="/classements-compétition/classement2.json">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Club</th>
+                            <th>Pts</th>
+                            <th>Matches</th>
+                            <th>GNP</th>
+                            <th>B+</th>
+                            <th>B-</th>
+                            <th>Diff</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="section-match">
+                <h4>Prochains Matchs Europa League :</h4>
+                <article class="sous_box">
+                    <img src="/image_match/OL - GAE.png" alt="Olympique Lyonnais - Go Ahead Eagles" width="80%">
+                    <p class="bouton"><a>Voir le match</a></p>
+                </article>
+                <article class="sous_box">
+                    <img src="/image_match/YB-OL.png" alt="Young Boys - OL" width="80%">
+                    <p class="bouton"><a>Voir le match</a></p>
+                </article>
+                <article class="sous_box">
+                    <img src="/image_match/OL-PAOK.png" alt="Olympique Lyonnais - PAOK" width="80%">
+                    <p class="bouton"><a>Voir le match</a></p>
+                </article>
+                <a href="/match.html" class="bouton-fin">Voir tous les matchs</a>
+        </section>
     </main>
 
         <footer>
@@ -85,7 +122,7 @@
             </section>
         </footer>
 
-        <script src="/classements-compétition/classment-creation.js"></script>
-        <script src="/classment-creation.js"></script>
+        <script src="/classements-compétition/compétiton/classement-création-el.js"></script>
+        <script src="/navigation.js"></script>
     </body>
 </html>
