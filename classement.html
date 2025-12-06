@@ -26,7 +26,7 @@
                     <div class="sous-nav">
                         <ul>
                             <li><a href="match.html">Matchs</a></li>
-                            <li><a href="classement.html">Classements</a></li>
+                            <li><a href="classement.html">Classements/Compétions</a></li>
                             <li><a href="effectif.html">Effectif</a></li>
                         </ul>
                     </div>
@@ -57,7 +57,7 @@
         </nav>
 
     <main class="box">
-        <div>
+        <div class="L1">
             <h3>Classement Ligue 1 :</h3>
             <table class="classement" data-json="classement1.json">
                 <thead>
@@ -76,7 +76,7 @@
             </table>
         </div>
 
-        <div>
+        <div class="EL">
             <h3>Classement Europa League :</h3>
             <table class="classement" data-json="classement2.json">
                 <thead>
@@ -92,12 +92,32 @@
                     </tr>
                 </thead>
                 <tbody></tbody>
+                <tfoot>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tfoot>
             </table>
+            <a class="bouton">Consulter la compétition</a>
+        </div>
+        
+        <div class="CDF">
+            <h3>Coupe de France</h3>
+            <article>
+                <p>Prochain match :</p>
+                <img src="image_match/FCSCC-OL.png" alt="FC Saint-Cyr Collonge - Olympique Lyonnais" width="80%">
+                <a class="bouton">Consulter la compétition</a>
+            </article>
         </div>
     </main>
 
         <footer>
-            <p class="nom_foot">©OL Fan 2025 - Mathieu AUSSANT S4<br/>Dernière mise-à-jour : 05/12/25</p>
+            <p class="nom_foot">©OL Fan 2025 - Mathieu AUSSANT S4<br/>Dernière mise-à-jour : 06/12/25</p>
             <section class="copy_sec">
                 <article class="copy">
                     <p>Copyrights image : </p>
@@ -123,6 +143,6 @@
         </footer>
 
         <script src="navigation.js"></script>
-        <script src="ligne-classment.js"></script>
+        <script src="classment-creation.js"></script>
     </body>
 </html>

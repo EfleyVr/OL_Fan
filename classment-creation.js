@@ -5,13 +5,16 @@ document.querySelectorAll("table.classement").forEach(table => {
     fetch(jsonFile)
         .then(res => res.json())
         .then(data => {
-            // On trie simplement par position (si ton JSON est déjà correct, pas besoin de recalcul)
+            // Tri par position
             data.sort((a, b) => a.position - b.position);
 
             data.forEach(team => {
+                if (team.position > 18) return;
+
                 const tr = document.createElement("tr");
-                // Classe spéciale OL pour mettre en valeur
-                tr.className = team.club.toLowerCase().includes("olympique lyonnais") ? "ol" : "non-ol";
+
+                // Classe spéciale OL
+                tr.className = (team.club === "Olympique Lyonnais") ? "ol" : "non-ol";
 
                 tr.innerHTML = `
                     <td>${team.position}</td>
