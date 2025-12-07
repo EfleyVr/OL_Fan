@@ -1,21 +1,20 @@
 /*rangement box*/
 .rangement{
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    grid-auto-rows: minmax(1, auto);
-    gap: 20px;
+    column-count: 2;
+    column-gap: 30px;
+    padding: 20px;
 }
 
-.section-classement{
-    grid-column: 1;
-}
-
-.section-match{
-    grid-column: 2;
+.section{
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 /*création box*/
-.section-classement, .section-match{
+.section{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -24,7 +23,6 @@
     border-right: 3px solid #c88d284d;
     border-radius: 20px;
     padding: 15px 30px;
-    margin: 10px 25px;
 }
 
 /*sous-box : style*/
@@ -42,6 +40,13 @@
     transform: translateY(-4px);
     box-shadow: 3px 4px rgb(230, 230, 230);
 }
+
+/*statistique style*/
+.sous_box ul{
+    list-style-type: square;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+} 
 
 /*style bouton*/
 .bouton, .bouton-fin{
@@ -81,7 +86,7 @@ h3{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
-    font-size: 21px;
+    font-size: 22px;
 }
 
 h4{
@@ -89,6 +94,13 @@ h4{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
     font-size: 18px;
+}
+
+h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 /*style tableau*/

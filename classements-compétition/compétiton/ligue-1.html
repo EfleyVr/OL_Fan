@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <title>OL Fan</title>
         <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="classement.css">
+        <link rel="stylesheet" href="el.css">
         <link rel="icon" href="/image/favicon.ico" type="image/x-icon">
     </head>
 
@@ -56,65 +56,83 @@
             </div>
         </nav>
 
-    <main class="box">
-        <div class="L1">
-            <h3>Classement Ligue 1 :</h3>
-            <table class="classement" data-json="classement1.json">
-                <thead>
-                    <tr>
-                        <th>Pos</th>
-                        <th>Club</th>
-                        <th>Pts</th>
-                        <th>Matches</th>
-                        <th>GNP</th>
-                        <th>B+</th>
-                        <th>B-</th>
-                        <th>Diff</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-            <a href="/classements-compétition/compétiton/ligue-1.html" class="bouton">Consulter la compétition</a>
-        </div>
+    <main>
+        <h3>Ligue 1</h3>
+        <section class="rangement">
+            <div class="section">
+                <h4>Classement Europa League :</h4>
+                <table class="classement" data-json="/classements-compétition/classement1.json">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Club</th>
+                            <th>Pts</th>
+                            <th>Matches</th>
+                            <th>GNP</th>
+                            <th>B+</th>
+                            <th>B-</th>
+                            <th>Diff</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
 
-        <div class="EL">
-            <h3>Classement Europa League :</h3>
-            <table class="classement" data-json="classement2.json">
-                <thead>
-                    <tr>
-                        <th>Pos</th>
-                        <th>Club</th>
-                        <th>Pts</th>
-                        <th>Matches</th>
-                        <th>GNP</th>
-                        <th>B+</th>
-                        <th>B-</th>
-                        <th>Diff</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-                <tfoot>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tfoot>
-            </table>
-            <a href="/classements-compétition/compétiton/europa-league.html" class="bouton">Consulter la compétition</a>
-        </div>
-        
-        <div class="CDF">
-            <h3>Coupe de France</h3>
-            <article>
-                <p>Prochain match :</p>
-                <img src="/image_match/FCSCC-OL.png" alt="FC Saint-Cyr Collonge - Olympique Lyonnais" width="80%">
-                <a href="/classements-compétition/compétiton/coupe-de-france.html" class="bouton">Consulter la compétition</a>
-            </article>
-        </div>
+            <div class="section">
+                <h4>Statistiques OL :</h4>
+                <article class="sous_box">
+                    <h5>Meilleurs Buteurs :</h5>
+                    <ul>
+                        <li>Pavel Sulc - 5 buts</li>
+                        <li>Corentin Tolisso - 3 buts</li>
+                        <li>Afonso Moreira - 2 buts</li>
+                    </ul>
+                </article>
+                <article class="sous_box">
+                    <h5>Meilleurs Passeurs :</h5>
+                    <ul>
+                        <li>Afonso moreira - 3 passes décisives</li>
+                        <li>Pavel Sulc - 2 passes décisives</li>
+                        <li>Ainsley Maintland-Niles - 5 passes décisives</li>
+                    </ul>
+                </article>
+                <article class="sous_box">
+                    <h5>Titulaires les plus utilisés :</h5>
+                    <ul>
+                        <li>Corentin Tolisso - 14 matchs</li>
+                        <li>Moussa Niakhate - 14 matchs</li>
+                        <li>Ainsley Maintland-Niles - 14 matchs</li>
+                </article>
+            </div>
+
+            <div class="section">
+                <h4>Derniers Matchs :</h4>
+                <article class="sous_box">
+                    <img src="/image_match/OL - FCN.png" alt="Ol 3-0 FC Nantes" width="80%">
+                    <p class="bouton"><a>Voir le match</a></p>
+                </article>
+                <h4>Prochains Matchs :</h4>
+                <article class="sous_box">
+                    <img src="/image_match/FCL - OL.png" alt="Fc lorient - OL" width="80%">
+                    <p class="bouton"><a>Voir le match</a></p>
+                </article>
+                <a href="/match.html" class="bouton-fin">Voir tous les matchs</a>
+            </div>
+
+            <div class="section">
+                <h4>Autres Compétitions</h4>
+                <article class="sous_box">
+                    <h5>Europa League</h5>
+                    <img src="/image_competition/europa-league.png" alt="Europa League" width="90px">
+                    <p class="bouton"><a href="/classements-compétition/compétiton/europa-league.html">Voir la compétition</a></p>
+                </article>
+                <article class="sous_box">
+                    <h5>Coupe de France</h5>
+                    <img src="/image_competition/cdf.png" alt="Coupe de France" width="130px">
+                    <p class="bouton"><a href="/classements-compétition/compétiton/coupe-de-france.html">Voir la compétition</a></p>
+                </article>
+            </div>
+        </section>
     </main>
 
         <footer>
@@ -143,7 +161,7 @@
             </section>
         </footer>
 
-        <script src="/classements-compétition/classment-creation.js"></script>
+        <script src="/classements-compétition/compétiton/classement-création-el.js"></script>
         <script src="/navigation.js"></script>
     </body>
 </html>
