@@ -4,6 +4,10 @@ body{
     margin: 0px;
 }
 
+body:hover{
+    cursor: default;
+}
+
 /*header*/
 header{
     text-align: center;
