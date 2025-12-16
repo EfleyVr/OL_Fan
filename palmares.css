@@ -1,0 +1,36 @@
+/*titre*/
+h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+h4{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/*Box style*/
+.box{
+    border-top : 5px double #C88C28;
+    border-left : 3px solid #c88d284d;
+    border-right : 3px solid #c88d284d;
+    padding : 30px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius : 20px;
+    text-align : center;
+    font-family : Georgia, 'Times New Roman', Times, serif;
+}
+
+/*rangement box*/
+.palmares{
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : center;
+    gap : 20px;
+}
