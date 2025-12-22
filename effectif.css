@@ -62,7 +62,7 @@ h6{
     flex-wrap: wrap;
 }
 
-.personnage{
+.personnage, .autre_page{
     text-align: center;
     border-top: 3px solid #C88C28;
     border-left: 2px solid #c88d284d;
@@ -74,13 +74,41 @@ h6{
     transition: transform 0.5s, box-shadow 0.6s;
 }
 
-.personnage:hover{
+.personnage:hover, .autre_page:hover{
     transform: scale(102%);
     box-shadow: 3px 5px rgb(230, 230, 230);
 }
 
 .personnage img{
     width: 350px;
+    border: 3px dashed #C88C28;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+/*bouton*/
+.bouton{
+    width: 35%;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    padding: 8px;
+    margin: 15px;
+    transition: transform 0.35s, background-color 0.4s;
+}
+
+.bouton:hover{
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+    transform: scale(1.1);
+}
+
+.bouton:active{
+    transform: scale(0.9);
+}
+
+/*style image ilustration*/
+.ilustration{
+    width: 200px;
     border: 3px dashed #C88C28;
     background-color: whitesmoke;
     border-radius: 10px;
